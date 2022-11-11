@@ -1,0 +1,15 @@
+td,
+th {
+  border: 2px solid #333;
+  padding: 1rem;
+}
+
+.studentRegistrationList, .TrainerRegistrationList {
+  width: 100%;
+  overflow: scroll;
+}
+
+.courseList {
+  width: 100%;
+  overflow-x: scroll;
+}

@@ -1,0 +1,62 @@
+.add-category {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .heading {
+    h1 {
+      font-size: 1.5rem;
+      padding: 1rem 0;
+      color: #0c0015;
+    }
+  }
+  form {
+    input {
+      margin-left: 0;
+      width: 220px;
+      padding: 0.7rem 0.3rem;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      border-color: #0c0015;
+      background: transparent;
+      text-transform: capitalize;
+
+      &:focus,
+      &:active {
+        outline: 2px solid #a43af8;
+      }
+    }
+    textarea {
+      width: 220px;
+      padding: 0.7rem 0.3rem;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      background: transparent;
+      border: 2px solid #0c0015;
+
+      &:focus,
+      &:active {
+        outline: 2px solid #a43af8;
+      }
+    }
+
+    button {
+      width: 130px;
+      height: 40px;
+      font-size: 1rem;
+      border-radius: 50px;
+      background: #1e0036;
+      color: #fff;
+      box-shadow: -3px -2px 0px 2px #a43af8;
+      margin: 1rem 0;
+      margin-bottom: 0;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 3px 2px 0px 2px #a43af8;
+      }
+    }
+  }
+}

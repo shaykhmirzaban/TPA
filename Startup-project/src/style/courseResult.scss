@@ -1,0 +1,175 @@
+.CourseResult {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .heading {
+    h1 {
+      font-size: 2rem;
+      padding: 1rem 0;
+      color: #0c0015;
+    }
+  }
+
+  .sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+
+    .heading {
+      h1 {
+        font-size: 1.2rem;
+        color: #0c0015;
+        padding: 0.5rem 0;
+      }
+    }
+
+    select,
+    input {
+      width: 200px;
+      padding: 0.7rem 0.3rem;
+      font-size: 0.9rem;
+      // border-radius: 5px;
+      // border: 2px solid #0c0015;
+      border: none;
+      border-bottom: 2px solid #0c0015;
+      border-radius: 0;
+
+      &:active,
+      &:focus {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid #0c0015;
+      }
+    }
+
+    button {
+      width: 110px;
+      height: 40px;
+      font-size: 1rem;
+      border-radius: 50px;
+      background: #1e0036;
+      color: #fff;
+      box-shadow: -3px -2px 0px 2px #a43af8;
+      cursor: pointer;
+      margin: 1rem;
+
+      &:hover {
+        box-shadow: 3px 2px 0px 2px #a43af8;
+      }
+    }
+
+    p {
+      width: 90%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #1e0036;
+    }
+
+    table {
+      border-collapse: collapse;
+      thead {
+        background: #1e0036f2;
+        color: #fff;
+
+        tr {
+          th {
+            border: none;
+          }
+        }
+      }
+      tbody {
+        background: #9c29f7;
+        color: #fff;
+        tr {
+          td {
+            border: none;
+          }
+        }
+      }
+    }
+
+    .form {
+      width: 95%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .allData {
+    .heading {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0;
+      h1 {
+        font-size: 1.2rem;
+        color: #0c0015;
+        padding: 0.5rem 0;
+      }
+    }
+    table {
+      border-collapse: collapse;
+
+      thead {
+        background: #1e0036f2;
+        color: #fff;
+
+        tr {
+          th {
+            border: none;
+          }
+        }
+      }
+      tbody {
+        background: #a43af8c4;
+        color: #1e0036;
+        tr {
+          td {
+            border: none;
+          }
+
+          &:hover {
+            background: #9c29f7;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .allData {
+    width: 95%;
+    overflow-x: scroll;
+  }
+  .CourseResult .allData table {
+    width: 660px;
+  }
+  .CourseResult .sort {
+    width: 95%;
+    overflow-x: scroll;
+    align-items: flex-start;
+  }
+  .CourseResult .sort table {
+    width: 660px;
+  }
+  .CourseResult .sort .heading {
+    width: 95%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .CourseResult .sort .form {
+    flex-direction: column;
+  }
+}
